@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import NextLink from "next/link"
 import {
     Container,
@@ -13,9 +14,15 @@ import {
     useColorModeValue,
     Heading
 } from '@chakra-ui/react';
-import { AddIcon, EmailIcon, HamburgerIcon } from '@chakra-ui/icons';
+import { EmailIcon, HamburgerIcon } from '@chakra-ui/icons';
 
-const LinkItem = ({ href, path, children }) => {
+interface LinkDetails {
+    href: string,
+    path: string,
+    children: ReactNode  
+}
+
+const LinkItem = ({ href, path, children }: LinkDetails) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
@@ -30,11 +37,11 @@ const LinkItem = ({ href, path, children }) => {
     )
 }
 
-export default function Navbar(props) {
-    const { path } = props
+export default function Navbar(props: string ) {
+    const path: string = props
 
     return (
-        <Box
+        <Box 
             position="sticky"
             as="nav"
             w="100%"
