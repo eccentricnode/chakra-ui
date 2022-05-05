@@ -37,7 +37,7 @@ const LinkItem = ({ href, path, children }: LinkDetails) => {
     )
 }
 
-export default function Navbar(props: string ) {
+export default function Navbar(props: any) {
     const path: string = props
 
     return (
