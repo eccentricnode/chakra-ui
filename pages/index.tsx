@@ -1,9 +1,8 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
 import Head from 'next/head'
 import Layout from '../components/layout'
 import styles from '../styles/Home.module.css'
-import { Box, Button, Container, Heading, HStack, Icon, Text } from '@chakra-ui/react'
+import { Box, Button, Container, Heading, HStack, Icon, Text, Image } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
 import { BsTwitter, BsLinkedin } from "react-icons/bs";
 
@@ -14,15 +13,15 @@ const Home: NextPage = () => {
         <meta name="viewport" content='width=device-width' />
         <title>Austin Johnson - Homepage</title>
       </Head>
-      <Container maxW="container.xl" boxShadow='lg' pb="10" my='150' borderRadius="10" display="flex" flexDirection="column">
+      <Container maxW="container.xl" boxShadow='lg' pb="10" my='350' borderRadius="10" display="flex" flexDirection="column">
         <Box display="flex" justifyContent="space-around">
           <Box display="flex" flexDirection="column" justifyContent="center">
             <Heading as="h1" size="3xl">Austin Johnson</Heading>
             <Text as="p" fontSize="2xl" color='tomato'>Full-Stack Developer</Text>
             <Text as="p">Located in Phoenix, Arizona</Text>
           </Box>
-          <Box borderRadius="10" transform="translateY(-100px)">
-            <Image width={400} height={600} src="/20200120_ventureplex7681.jpg" alt="image of Austin Johnson" />
+          <Box boxSize="sm" transform="translateY(-250px)">
+            <Image borderRadius="md" src="/20200120_ventureplex7681.jpg" alt="image of Austin Johnson" />
           </Box>
         </Box>
         <Box display="flex" justifyContent="space-around">
