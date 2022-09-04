@@ -50,8 +50,8 @@ export default function Navbar(props: any) {
             zIndex={1}
             {...props}
         >
-            <Container display="flex" p={2} maxW="container.md" flexWrap="wrap" alignItems="center" justifyContent="space-between">
-                <Flex align="center" mr={5}>
+            <Container display="flex" p={2} maxW="container.lg" flexWrap="wrap" alignItems="center" justifyContent="space-between">
+                <Flex align="center" mr={2}>
                     <Heading as="h1" size='lg' letterSpacing={'tighter'}>
                         Austin Johnson
                     </Heading>
@@ -68,6 +68,8 @@ export default function Navbar(props: any) {
                     mt={{ base: 4, nmd: 0 }}
                 >
                     <LinkItem href='/skills' path={path}>About</LinkItem>
+                    <LinkItem href='/resume' path={path}>Resume</LinkItem>
+                    <LinkItem href='/portfolio' path={path}>Portfolio</LinkItem>
                     <LinkItem href='/blog' path={path}>Blog</LinkItem>
                     <LinkItem href='/contact' path={path}> <EmailIcon mx='4px' /> Contact Me</LinkItem>
                 </Stack>
@@ -77,8 +79,14 @@ export default function Navbar(props: any) {
                         <Menu>
                             <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
                             <MenuList>
-                                <NextLink href="/" passHref>
+                                <NextLink href="/about" passHref>
                                     <MenuItem as={Link}>About</MenuItem>
+                                </NextLink>
+                                <NextLink href="/resume" passHref>
+                                    <MenuItem as={Link}>Resume</MenuItem>
+                                </NextLink>
+                                <NextLink href="/portfolio" passHref>
+                                    <MenuItem as={Link}>Portfolio</MenuItem>
                                 </NextLink>
                                 <NextLink href="/blog" passHref>
                                     <MenuItem as={Link}>Blog</MenuItem>
