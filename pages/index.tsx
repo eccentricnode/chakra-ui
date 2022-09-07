@@ -79,12 +79,13 @@ const Home: NextPage = () => {
         </Box>
       </Container>
 
+      <Container maxW="8xl" mb="5" centerContent>
+        <Heading as="h2" className="">
+          <u>About Me</u>
+        </Heading>
+      </Container>
+
       <Box id="about">
-        <Container maxW="8xl" mb="5" centerContent>
-          <Heading as="h2" className="">
-            <u>About Me</u>
-          </Heading>
-        </Container>
         <Container
           maxW="container.xl"
           boxShadow="lg"
@@ -163,14 +164,18 @@ const Home: NextPage = () => {
             </Flex>
           </Box>
         </Container>
-        <Divider />
       </Box>
 
       <Box id="resume">
-        <Container maxW="8xl">
-          Resume Section
+        <Container maxW="8xl" centerContent>
           <Divider />
+          <Heading py="20">
+            <u>Resume</u>
+          </Heading>
+
         </Container>
+
+        <Text>Section with some text that shows some stuff, that </Text>
       </Box>
       <Box id="portfolio">
         <Container maxW="8xl">
