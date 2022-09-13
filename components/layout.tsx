@@ -1,5 +1,5 @@
 import { Container } from "@chakra-ui/react";
-import Navbar from "../components/navbar";
+import Navbar from "./Navbar";
 
 export default function Layout({children} : {children: any}) {
     return(

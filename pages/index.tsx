@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import NextLink from "next/link";
 import Head from "next/head";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import styles from "../styles/Home.module.css";
 import {
   Box,
@@ -24,14 +24,6 @@ import {
   BsGithub,
   BsFillFileEarmarkTextFill,
 } from "react-icons/bs";
-import {
-  SiPostgresql,
-  SiJavascript,
-  SiAngular,
-  SiNrwl,
-  SiBootstrap,
-} from "react-icons/si";
-import { JavascriptIcon } from "../components/icons/javascript";
 
 const Home: NextPage = () => {
   return (
