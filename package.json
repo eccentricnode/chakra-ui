@@ -13,11 +13,9 @@
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@prisma/client": "^4.3.1",
     "axios": "^0.27.2",
     "dashify": "^2.0.0",
-    "firebase": "^9.9.4",
-    "firebase-admin": "^11.0.1",
-    "framer-motion": "^6",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
@@ -29,6 +27,7 @@
     "@types/react-dom": "18.0.3",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.6",
+    "prisma": "^4.3.1",
     "typescript": "4.6.4"
   }
 }
