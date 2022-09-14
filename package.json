@@ -18,6 +18,7 @@
     "@prisma/client": "^4.3.1",
     "axios": "^0.27.2",
     "dashify": "^2.0.0",
+    "framer-motion": "^7.3.4",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
