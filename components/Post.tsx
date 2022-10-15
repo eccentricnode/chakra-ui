@@ -20,13 +20,12 @@ const Post: NextPage<{ post: PostProps }> = ({ post }) => {
             <small>By {authorName}</small>
 
             {/* mdx provides the content */}
-            <MDXProvider></MDXProvider>
-            <style jsx>{`
+            {/* <style jsx>{`
                 div {
                     color: inherit;
                     padding: 2rem;
                 }
-            `}</style>
+            `}</style> */}
         </div>
     );
 };
